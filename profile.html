@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <h2>User Profile</h2>
+
+      <div id="profileInfo">
+        <p><strong>Full Name:</strong> <span id="profileName"></span></p>
+        <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="profilePhone"></span></p>
+        <p><strong>Gender:</strong> <span id="profileGender"></span></p>
+      </div>
+
+      <form id="editForm" style="display: none;">
+        <label>Name</label>
+        <input type="text" id="editName" placeholder="Full Name">
+        <label>Phone Number</label>
+        <input type="text" id="editPhone" placeholder="Phone Number">
+        <label>Gender</label>
+        <input type="text" id="editGender" placeholder="Gender">
+        <button type="submit" class="btn save-btn">Save Changes</button>
+      </form>
+
+      <div class="actions">
+        <button class="btn edit-btn" id="editProfile">Edit Profile</button>
+        <button class="btn logout-btn" id="logout">Logout</button>
+      </div>
+
+      <div id="msg"></div>
+    </div>
+  </div>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>

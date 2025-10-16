@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-card">
+      <h2>Create Account</h2>
+      <form id="signupForm">
+        <div class="input-group">
+          <input type="text" id="name" required>
+          <label for="name">Full Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="number" id="phone-num" required>
+          <label for="phone-num">Phone Number</label>
+        </div>
+        <div class="input-group">
+          <input type="text" id="gender" required>
+          <label for="gender">Gender</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="confirm-password" required>
+          <label for="confirm-password">Confirm Password</label>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <div class="links">
+        <p style="font-size:13px;">Already have an account?</p><a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+  <div class="otp-section" id="otpSection" style="display:none;">
+  <h3>Verify Your Email</h3>
+  <p>Enter the 6-digit code sent to your email</p>
+  <input type="text" id="otpInput" maxlength="6" placeholder="Enter OTP" required>
+  <button id="verifyOtpBtn" class="btn">Verify OTP</button>
+</div>
+<div id="msg" class="msg"></div>
+
+
+  <script src="js/signup.js"></script>
+</body>
+</html>
